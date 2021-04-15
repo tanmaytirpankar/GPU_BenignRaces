@@ -1,0 +1,159 @@
+\documentclass[conference]{IEEEtran}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+% Maths Libraries
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+
+% Algorithm Libraries
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage[noend]{algpseudocode}
+%\usepackage[]{algorithm2e}
+
+
+% Text packages
+\usepackage{xspace}
+\usepackage{paralist}
+%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+
+% Miscellaneous packages
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{flushend}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{comment}
+\usepackage{footmisc}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{cite}
+\usepackage{array}
+\usepackage{arydshln}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+\usepackage{tablefootnote}
+\usepackage{threeparttable}
+%\usepackage[lowtilde]{url}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage[switch]{lineno}
+%\linenumbers
+%\usepackage[font=footnotesize]{caption}
+\newcommand{\etc}{etc.\@\xspace}
+\newcommand{\ie}{i.e.\@\xspace}
+\newcommand{\eg}{e.g.\@\xspace}
+%\usepackage{subcaption} 
+\usepackage[inference]{semantic}
+\usepackage{framed}
+\usepackage{float}
+
+% Theorems
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}
+\newtheorem{precond}{Precondition}
+
+% New Commands
+\newcommand{\satire}{{\sffamily\scshape Satire}\xspace}
+%% colors
+\newcommand{\tb}[1]{\textcolor{blue}{#1}}
+\newcommand{\tr}[1]{\textcolor{red}{#1}}
+\newcommand{\tg}[1]{\textcolor{green}{#1}}
+
+% New Operators
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+
+% Global Styles
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\lstset{
+	language=C++,
+	tabsize=1,
+	%basicstyle=\normal,%small,
+	columns=fixed,
+	morekeywords={foreach,forall,bool,inparallel,spawn,sync,where,delete,min,lambda,in,def,true,false,cilk_spawn,cilk_sync,auto, inputs, outputs, exprs, endif},
+	numbers=left,
+        basicstyle=\sffamily\footnotesize,
+        breaklines=true,                % sets automatic line breaking
+        columns=fullflexible,
+	numberstyle=\sffamily\scriptsize,%\tiny,
+        commentstyle=\color{blue},
+	numberblanklines=false,
+	xleftmargin=20pt,
+	numbersep=10pt,
+	escapeinside={[@}{@]}
+}
+
+
+\begin{document}
+
+\title{References}
+\author{\IEEEauthorblockN{Anonymous*}}
+% \author{\IEEEauthorblockN{1\textsuperscript{st} Arnab Das}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{2\textsuperscript{nd} Tanmay Tirpankar}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{3\textsuperscript{rd} Ganesh Gopalakrishnan}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{3\textsuperscript{rd} Sriram Krishnamoorthy}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{3\textsuperscript{rd} Ian Briggs}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{3\textsuperscript{rd} Mark Baranowski}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% }
+
+\maketitle
+
+\section{description}
+   \label{sec:description}
+   \input{description.tex}
+
+% \begin{IEEEkeywords}
+% Floating Point Numbers, Rounding, Symbolic Automatic Differentiation, Computational Graphs, Optimization
+% \end{IEEEkeywords}
+
+ % \section{Introduction}
+ % \label{sec:intro}
+ % \input{intro.tex}
+
+\bibliographystyle{plain}
+\bibliography{bib/references}
+
+
+ \end{document}
+\endinput
+
