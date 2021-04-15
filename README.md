@@ -1,1 +1,1 @@
-# GPU_BenignRaces
+# RedRace
